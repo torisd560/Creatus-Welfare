@@ -31,7 +31,7 @@ p{
 }
 .custom-btn{
   background-color: #fff;
-    color: #263b5c;
+    color: #F15B43;
     border: 2px solid rgb(224, 221, 221);
     padding: 15px 20px;
     font-weight: 700;
@@ -39,6 +39,9 @@ p{
 .custom-margin{
   margin-top: 150px;
   margin-bottom: 50px;
+}
+.custom-cursor{
+  cursor: pointer;
 }
 
 .App-logo {
