@@ -6,10 +6,10 @@ const Banner = () => {
     return (
         <div className='banner'>
             <div className='text-center banner-content text-white'>
-                <div className='donation-title mb-3'>
-                    <span>Education</span>
-                    <span>Child</span>
-                    <span>Medical</span>
+                <div className='donation-title d-flex justify-content-center mb-3'>
+                    <h6>Education</h6>
+                    <h6>Child</h6>
+                    <h6 className = 'border-0'>Medical</h6>
                 </div>
                     <h1>Change a Child's Life</h1>
                    <div className='w-50 mx-auto'>
@@ -17,7 +17,7 @@ const Banner = () => {
                    </div>
                 <div className='mt-5'>
                     <Button className='custom-button rounded-pill px-5 py-3'>Our Causes</Button>
-                    <Button className='custom-button ms-5 rounded-pill px-5 py-3' style={{ background: '#263B5C' }}>Learn More</Button>
+                    <Button className='custom-button ms-5 rounded-pill px-5 py-3' style={{ background: 'darkcyan' }}>Learn More</Button>
                 </div>
             </div>
         </div>
