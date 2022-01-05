@@ -6,6 +6,7 @@ import BecomeVolunteer from './BecomeVolunteer/BecomeVolunteer'
 import Volunteers from './Volunteers/Vlounteers'
 import Causes from './Caueses/Causes'
 import Reviews from './Reviews/Reviews';
+import UploadVideo from './UploadVideo/UploadVideo';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <BecomeVolunteer></BecomeVolunteer>
             <Volunteers></Volunteers>
             <Reviews></Reviews>
+            <UploadVideo></UploadVideo>
             <Footer></Footer>
         </div>
     );

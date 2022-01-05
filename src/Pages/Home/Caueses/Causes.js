@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import SingleCauses from './SingleCauses/SingleCauses';
-import causesData from '../../../fakeData/donationServices.json'
 
 const Causes = () => {
 
-    // const [causesData, setCausesData] = useState([])
+    const [causesData, setCausesData] = useState([])
 
-    // const url = 'https://lit-lowlands-70936.herokuapp.com/funds?fbclid=IwAR3xiHT5ZsGC4X-MY_xRvEiHFiP5AQDLvRt31_PK1RuMZ72KCcJbYT4HyJw'
-    // useEffect(() => {
-    //     fetch(url)
-    //         .then(res => res.json())
-    //         .then(data => setCausesData(data))
-    // }, [])
+    const url = 'https://lit-lowlands-70936.herokuapp.com/funds'
+    useEffect(() => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setCausesData(data.slice(0, 6)))
+    }, [])
     return (
         <Container className='my-5'>
             <div className='text-center my-5'>
